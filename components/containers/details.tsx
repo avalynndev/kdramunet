@@ -37,7 +37,7 @@ const DetailsContainer = ({ data }: any) => {
             <div className="mt-2 gap-2 flex">
               {data.otherNames &&
                 data.genres.map((genre: any, index: any) => (
-                  <Button size="sm">{genre.trim()}</Button>
+                  <Button key={index} size="sm">{genre.trim()}</Button>
                 ))}
             </div>
           </div>
