@@ -4,14 +4,14 @@ import { FetchAnimeInfo } from "@/lib/fetch";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default async function RecentDramas() {
-  const popular = await getRecent();
-  FetchAnimeInfo(popular);
+  const recent = await getRecent();
+  FetchAnimeInfo(recent);
 
   return (
     <div>
       <div className="mt-2 items-center grid grid-cols-2 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-6 gap-4">
-        {popular &&
-          popular.results.slice(0, 24).map((item: any, index: any) => (
+        {recent &&
+          recent.results.map((item: any, index: any) => (
             <Link href={`/info/${encodeURIComponent(item.id)}`} key={index}>
               <Card className="text-center items-center hover:scale-105 transition-all duration-300 hover:shadow-md dark:hover:shadow-blue-700 hover:shadow-zinc-900">
                 <CardHeader>

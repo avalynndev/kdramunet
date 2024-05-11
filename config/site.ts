@@ -5,7 +5,7 @@ export const siteConfig = {
   description:
     "Beautifully designed website where you can watch kdrama for free. Built with Next.JS and shadcn/ui.",
   mainNav: [
-    
+    // add nav buttons if required
   ],
   links: {
     twitter: "https://twitter.com/avalynndev",

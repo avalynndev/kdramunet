@@ -37,9 +37,19 @@ export default function IndexPage() {
           GitHub
         </Link>
       </div>
-      <RecentDramas />
-      <br />
+      <div className="flex justify-center mb-4 mt-8">
+        <h1 className="text-3xl font-mono leading-tight tracking-tighter md:text-4xl">
+          Popular Dramas
+        </h1>
+      </div>
       <PopularDramas />
+
+      <div className="flex justify-center mb-4 mt-8">
+        <h1 className="text-3xl font-mono leading-tight tracking-tighter md:text-4xl">
+          Recent Dramas
+        </h1>
+      </div>
+      <RecentDramas />
     </section>
   );
 }
