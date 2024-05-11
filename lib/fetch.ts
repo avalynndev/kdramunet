@@ -45,7 +45,6 @@ export async function FetchSearchTitle(title:any) {
 }
 
 export async function getVideoLink(epiId: any, mediaId: any) {
-  console.log(epiId,mediaId)
   let videoLink;
   const res = await fetch(
     `https://consumet-jade.vercel.app/movies/dramacool/watch?episodeId=${epiId}&mediaId=drama-detail/${mediaId}`,

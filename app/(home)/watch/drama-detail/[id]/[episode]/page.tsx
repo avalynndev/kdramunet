@@ -11,11 +11,7 @@ import { getVideoLink } from "@/lib/fetch";
 
 const EpisodeContainer = ({ params }: any) => {
   const { id, episode } = params;
-  console.log(
-    `https://consumet-jade.vercel.app/movies/dramacool/watch?episodeId=${episode}&mediaId=drama-detail/${id}`
-  );
   const [videoLink, setVideoLink] = useState(null);
-  console.log(videoLink);
   const fetchDetails = useCallback(async () => {
     try {
       const episode_link = await getVideoLink(episode, id);
