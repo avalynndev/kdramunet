@@ -34,12 +34,16 @@ const DetailsContainer = ({ data }: any) => {
           </div>
           <div className="mt-2 gap-2">
             <strong>Genres: </strong>
-            <div className="mt-2 gap-2 flex">
-              {data.otherNames &&
-                data.genres.map((genre: any, index: any) => (
-                  <Button key={index} size="sm">{genre.trim()}</Button>
-                ))}
-            </div>
+              <div className="max-w-3xl mx-auto flex">
+                <div className="flex flex-wrap gap-2 items-center">
+                  {data.otherNames &&
+                    data.genres.map((genre: any, index: any) => (
+                      <Button key={index} size="sm">
+                        {genre.trim()}
+                      </Button>
+                    ))}
+                </div>  
+              </div>
           </div>
           <div className="mt-2">
             <strong>Description:</strong>

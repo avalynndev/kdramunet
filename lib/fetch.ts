@@ -9,6 +9,15 @@ export async function getDramaInfo(id: any) {
   return data;
 }
 
+export async function getDramaInfoOnWatch(id: any) {
+  const res = await fetch(
+    `https://consumet-jade.vercel.app/movies/dramacool/info?id=%2Fdrama-detail%2F${id}`,
+    { next: { revalidate: 21600 } }
+  );
+  const data = await res.json();
+  return data;
+}
+
 export async function FetchVideoLinks(data: any, dramaId: any) {
   try {
     const fetchPromises = data.map(async (element: any) => {
