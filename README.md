@@ -3,9 +3,9 @@
 Author message:
 
 ```
-Enjowtown is the new version, please use that
+Enjoytown is the new version, please use that
 ```
 
-## <a href="https://enjowtown.netlify.app">enjowtown.netlify.app</a>
+## <a href="https://enjoytown.netlify.app">enjoytown.netlify.app</a>
 
 --------------------------
